@@ -128,7 +128,7 @@ class NerfactoModelConfig(ModelConfig):
     """Dimension of the appearance embedding."""
     average_init_density: float = 1.0
     """Average initial density output from MLP. """
-    camera_optimizer: CameraOptimizerConfig = field(default_factory=lambda: CameraOptimizerConfig(mode="SO3xR3"))
+    camera_optimizer: CameraOptimizerConfig = field(default_factory=lambda: CameraOptimizerConfig(mode="off"))
     """Config of the camera optimizer to use"""
 
 

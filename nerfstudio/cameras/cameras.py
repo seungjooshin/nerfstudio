@@ -987,7 +987,7 @@ class Cameras(TensorDataclass):
     def rescale_output_resolution(
         self,
         scaling_factor: Union[Shaped[Tensor, "*num_cameras"], Shaped[Tensor, "*num_cameras 1"], float, int],
-        scale_rounding_mode: str = "floor",
+        scale_rounding_mode: str = "round",
     ) -> None:
         """Rescale the output resolution of the cameras.
 
